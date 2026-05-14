@@ -5,10 +5,11 @@
   "license": "MIT",
   "author": "Arata Uebayashi",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node",
+    "dev": "tsx watch",
     "start": "node"
   },
   "bin": {
@@ -34,7 +35,12 @@
   },
   "devDependencies": {
     "@types/node": "^25.7.0",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.21.1",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "figlet": "^1.11.0",
+    "gradient-string": "^3.0.0",
+    "monoplate-kit": "^1.0.1"
   }
 }
