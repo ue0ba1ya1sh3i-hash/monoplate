@@ -1,0 +1,40 @@
+{
+  "name": "monoplate",
+  "version": "1.0.0",
+  "description": "This library is necessary for creating and running monoplates.",
+  "license": "MIT",
+  "author": "Arata Uebayashi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node",
+    "start": "node"
+  },
+  "bin": {
+    "create-monoplate-app": "./dist/bin/create-monoplate-app.js",
+    "create-monoplate-kit": "./dist/bin/create-monoplate-kit.js",
+    "monoplate": "./dist/bin/monoplate.js"
+  },
+  "engines": {
+    "node": ">=24.14.0",
+    "npm": ">=11.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ue0ba1ya1sh3i-hash/monoplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ue0ba1ya1sh3i-hash/monoplate/issues"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
