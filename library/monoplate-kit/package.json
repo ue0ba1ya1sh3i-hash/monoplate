@@ -1,14 +1,18 @@
 {
   "name": "monoplate-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library is necessary for launching and developing Monoplate.",
   "license": "MIT",
   "author": "Arata Uebayashi",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "npm run build && npm publish"
   },
   "engines": {
     "node": ">=24.14.0",
