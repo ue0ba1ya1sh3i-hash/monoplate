@@ -1,9 +1,10 @@
-## monoplate
+<h1 align="center">monoplate</h2>
+
 <div align="center">
   <img src="./web/public/monoplate.png" width="125">
 </div>
 
-This repository provides an easy way to create projects from various templates using the npx command.
+<h3 align="center">This repository provides an easy way to create projects from various templates using the npx command.</h4>
 
 ## Table of contents
 - [How to use](#how-to-use)
