@@ -1,4 +1,4 @@
-interface DefineConfig {
+export interface DefineConfig {
 
 }
 

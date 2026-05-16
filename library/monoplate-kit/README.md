@@ -6,9 +6,6 @@ This library is necessary for launching and developing Monoplate.
 
 - [All features](#all-features---log)
   - [Log](#all-features---log)
-  - [Prompts](#prompts)
-  - [New Line](#new-line)
-  - [Run CLI](#run-cli)
   
 - [License](#license)
 
@@ -16,12 +13,6 @@ This library is necessary for launching and developing Monoplate.
 Run `npm install monoplate-kit`
 
 ## All features - Log
-
-## Prompts
-
-## New Line
-
-## Run CLI
 
 ## License
 This library is licensed under the MIT License.

@@ -1,7 +1,7 @@
 <h1 align="center">Monoplate</h2>
 
 <div align="center">
-  <img src="./web/public/monoplate.png" width="130">
+  <img src="./web/public/icon.svg" width="130">
 </div>
 
 <h3 align="center">This repository provides an easy way to create projects from various templates using the npx command.</h3>

@@ -1,12 +1,29 @@
 import chalk from "chalk"
 import * as clack from "@clack/prompts"
 import { execa } from "execa"
+import { z } from "zod"
+import figlet from "figlet"
+import gradient from "gradient-string"
 
-export const log = (
-	message: string,
-	logType: "error" | "info" | "warn" | "complete",
-	tag?: string,
-): void => {
+export const showLogo = (): void => {
+  const logo = figlet.textSync("Monoplate", {
+    font: "ANSI Shadow",
+    verticalLayout: "default",
+    whitespaceBreak: true,
+  })
+
+  console.log(gradient(["AE53A0", "7D6DBC"]).multiline(logo))
+}
+
+export type Log = z.infer<typeof LogSchema>
+const LogSchema = z.object({
+  message: z.string(),
+  logType: z.enum(["error", "info", "warn", "complete"]),
+  tag: z.string().optional()
+})
+
+export const log = (logData: Log): void => {
+	const { message, logType, tag } = logData
 	const logMessage = tag ? `[${tag}] ${message}` : message
 
 	switch (logType) {
@@ -32,7 +49,10 @@ export const prompts = async (
 	return data
 }
 
-export const newLine = (number?: number): void => {
+export type NewLine = z.infer<typeof newLineSchema>
+const newLineSchema = z.number().optional()
+
+export const newLine = (number?: NewLine): void => {
 	// 無指定の場合は1行に設定
 	number = number ?? 1
 
@@ -41,11 +61,10 @@ export const newLine = (number?: number): void => {
 	}
 }
 
-export const runCli = async (command: string, options: string[]): Promise<number | undefined> => {
+export const runCLI = async (command: string, options: string[]): Promise<number | undefined> => {
 	newLine()
 	console.log(`> ${command} ${options.join(" ")}`)
 
-	newLine()
 	const { exitCode } = await execa(command, options, { 
 		stdio: "inherit",
 		reject: false
