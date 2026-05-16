@@ -7,12 +7,13 @@ import { RouterProvider, createRouter } from "@tanstack/react-router"
 import { routeTree } from "@/routeTree.gen"
 
 // Original
-import { NotFoundPageComponents } from "@/components/page/notFound"
-import "./index.css"
+import { NotFoundTemplateComponents } from "@/components/template/notFound"
+import "@/index.css"
+import "@/i18next"
 
 const router = createRouter({
   routeTree,
-  defaultNotFoundComponent: NotFoundPageComponents
+  defaultNotFoundComponent: NotFoundTemplateComponents
 })
 
 declare module "@tanstack/react-router" {

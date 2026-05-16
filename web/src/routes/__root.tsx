@@ -1,5 +1,5 @@
 import { Outlet, createRootRoute } from "@tanstack/react-router"
-import { RootPageComponents } from "@/components/page/root"
+import { RootTemplateComponents } from "@/components/template/root"
 
 export const Route = createRootRoute({
   component: App
@@ -7,8 +7,8 @@ export const Route = createRootRoute({
 
 function App() {
   return (
-    <RootPageComponents>
+    <RootTemplateComponents>
       <Outlet />
-    </RootPageComponents>
+    </RootTemplateComponents>
   )
 }

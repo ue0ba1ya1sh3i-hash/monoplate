@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "index": {
+      "title": "Create your project easily right now using a variety of templates."
+    }
+  },
+
+  "components": {
+    "page": {
+      "notFound": {
+        "title": "404 | Page Not Found",
+        "message": "Sorry. We couldn't find the page you looking for.",
+        "goHome": "Go Home"
+      }
+    },
+
+    "parts": {
+      "header": {
+        "link": {
+          "home": "Home"
+        }
+      }
+    }
+  }
+}

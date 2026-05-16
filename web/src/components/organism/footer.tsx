@@ -6,12 +6,12 @@ import { FaXTwitter } from "react-icons/fa6"
 import { FaInstagram } from "react-icons/fa"
 import { IoLogoGithub } from "react-icons/io"
 
-export function FooterPartsComponents() {
+export function FooterOrganismComponents() {
   const shineClassName = "text-muted-foreground transition-all hover:text-foreground"
 
   return (
-    <footer className="flex bg-background w-full px-4 py-6 border-t gap-4 items-center">
-      <Link className={cn("text-xl", shineClassName)} to="/">
+    <footer className="mt-4 flex bg-background w-full px-4 py-6 border-t gap-4 items-center">
+      <Link className="text-xl text-muted-foreground" to="/">
         Monoplate
       </Link>
 
