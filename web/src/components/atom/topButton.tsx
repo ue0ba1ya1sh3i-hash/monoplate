@@ -15,11 +15,16 @@ export function TopButtonAtomComponents() {
 
   const isShow = scrollY > 1
 
-  if (isShow) {
-    return (
-      <button onClick={scrollToTop} className="rounded-full text-muted-foreground bg-muted fixed p-2 bottom-2 right-2">
-        <ArrowBigUp className="size-6" />
-      </button>
-    )
+  if (!isShow) {
+    return null
   }
+
+  return (
+    <button
+      onClick={scrollToTop}
+      className="fixed bottom-2 right-2 rounded-full bg-muted p-2 text-muted-foreground animate-in fade-in zoom-in-95 slide-in-from-bottom-2 duration-200 ease-out"
+    >
+      <ArrowBigUp className="size-6" />
+    </button>
+  )
 }

@@ -22,7 +22,7 @@ function App() {
     <>
       <HeaderOrganismComponents fixed flashy />
 
-      <div className="bg-background bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-size-[4rem_4rem] flex flex-col px-4 min-h-svh justify-center items-center">
+      <div className="bg-background bg-code flex flex-col px-4 min-h-svh justify-center items-center">
         <IconAtomComponents className="mb-2 size-10 sm:size-20 mx-auto" />
         <p className="text-center sm:mb-10 mb-7 text-2xl sm:text-6xl">{t("routes.index.title")}</p>
         <div className="flex items-center mx-auto gap-2">
