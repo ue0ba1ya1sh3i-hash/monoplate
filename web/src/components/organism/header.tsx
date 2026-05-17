@@ -9,7 +9,7 @@ export function HeaderOrganismComponents({ fixed, flashy }: { fixed?: boolean, f
   return (
     <div className={cn(
       "w-full",
-      flashy && "py-4 px-6",
+      flashy && "pt-4 px-6",
       fixed ? "fixed" : "sticky"
     )}>
       <header className={cn(
@@ -23,8 +23,7 @@ export function HeaderOrganismComponents({ fixed, flashy }: { fixed?: boolean, f
 
         <div className="hidden sm:flex items-center gap-4 ml-auto text-xl">
           <Link className="hover:text-foreground transition-all" to="/">{t("components.parts.header.link.home")}</Link>
-          <Link className="hover:text-foreground transition-all" to="/">{t("components.parts.header.link.home")}</Link>
-          <Link className="hover:text-foreground transition-all" to="/">{t("components.parts.header.link.home")}</Link>
+          <Link className="hover:text-foreground transition-all" to="/document">{t("routes.document.title")}</Link>
         </div>
       </header>
     </div>

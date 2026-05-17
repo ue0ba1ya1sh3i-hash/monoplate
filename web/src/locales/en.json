@@ -1,7 +1,12 @@
 {
   "routes": {
     "index": {
-      "title": "Create your project easily right now using a variety of templates."
+      "title": "Create your project easily right now using a variety of templates.",
+      "viewTemplates": "View Templates"
+    },
+
+    "document": {
+      "title": "Documentation"
     }
   },
 

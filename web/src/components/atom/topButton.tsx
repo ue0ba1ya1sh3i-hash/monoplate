@@ -13,7 +13,7 @@ export function TopButtonAtomComponents() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const isShow = scrollY > 1
+  const isShow = scrollY > 100
 
   if (!isShow) {
     return null
@@ -22,7 +22,7 @@ export function TopButtonAtomComponents() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-2 right-2 rounded-full bg-muted p-2 text-muted-foreground animate-in fade-in zoom-in-95 slide-in-from-bottom-2 duration-200 ease-out"
+      className="fixed bottom-4 right-4 rounded-full bg-muted p-2 text-muted-foreground animate-in fade-in zoom-in-95 slide-in-from-bottom-2 duration-200 ease-out"
     >
       <ArrowBigUp className="size-6" />
     </button>

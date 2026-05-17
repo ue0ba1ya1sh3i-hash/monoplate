@@ -1,5 +1,7 @@
 import { useDarkMode } from "usehooks-ts"
 import { cn } from "@/lib/shadcn/utils"
+import { TopButtonAtomComponents } from "@/components/atom/topButton"
+import { FooterOrganismComponents } from "@/components/organism/footer"
 
 export function RootTemplateComponents({ children }: { children: React.ReactNode }) {
   const { isDarkMode } = useDarkMode()
@@ -10,6 +12,8 @@ export function RootTemplateComponents({ children }: { children: React.ReactNode
       isDarkMode ? "dark" : ""
     )}>
       {children}
+      <TopButtonAtomComponents />
+      <FooterOrganismComponents />
     </div>
   )
 }
