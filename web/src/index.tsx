@@ -10,6 +10,7 @@ import { routeTree } from "@/routeTree.gen"
 import { NotFoundTemplateComponents } from "@/components/template/notFound"
 import "@/index.css"
 import "@/i18next"
+import "@/confirmDomain"
 
 const router = createRouter({
   routeTree,
