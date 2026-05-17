@@ -28,8 +28,8 @@ export default defineConfig({
         name: "Monoplate",
         short_name: "Monoplate",
         description: "Monoplate is a tool that makes it easy to create your project from a variety of templates.",
-        theme_color: "#008235",
-        background_color: "#008235",
+        theme_color: "#d3d3d3",
+        background_color: "#d3d3d3",
         display: "standalone",
         orientation: "portrait",
         icons: [
