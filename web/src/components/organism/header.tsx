@@ -17,7 +17,7 @@ export function HeaderOrganismComponents({ fixed, flashy }: { fixed?: boolean, f
         flashy ? "py-2 rounded-lg bg-muted/50 border" : "py-4 bg-background border-b"
       )}>
         <Link to="/" className="flex items-center gap-2">
-          <IconAtomComponents className="size-10" />
+          <IconAtomComponents className="size-7" />
           <p className="sm:text-2xl text-lg">Monoplate</p>
         </Link>
 

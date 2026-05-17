@@ -1,0 +1,4 @@
+User-agent *
+Allow /
+
+Sitemap: https://monoplate.foscript.com/sitemap.xml

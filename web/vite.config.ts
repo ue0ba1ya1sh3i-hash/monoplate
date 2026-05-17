@@ -7,6 +7,7 @@ import react, { reactCompilerPreset } from "@vitejs/plugin-react"
 import babel from "@rolldown/plugin-babel"
 import tailwindcss from "@tailwindcss/vite"
 import { VitePWA } from "vite-plugin-pwa"
+import { sitemapPlugin } from "@corentints/tanstack-router-sitemap"
 
 export default defineConfig({
   plugins: [
@@ -14,6 +15,12 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
+
+    sitemapPlugin({
+      baseUrl: "https://monoplate.foscript.com",
+      outputPath: "public/sitemap.xml"
+    }),
+
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
